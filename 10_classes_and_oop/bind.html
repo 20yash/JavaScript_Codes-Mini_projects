@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT</title>
+</head>
+<body>
+    <button>button clicked</button>
+    
+</body>
+<script>
+    class  React{
+        constructor(){
+            this.library = "React"
+            this.server = "https://localhost:300"
+            //special business requirement here
+            //refrence of button and click event on selecting the button
+
+            document.querySelector('button').addEventListener('click',this.handleclick.bind(this))
+           //attaching all variables and functions here but not
+
+        }
+        handleclick(){
+            console.log("button clicked");
+            console.log(this.server);
+            //using BIND keyword here
+            //not only manually forcefully giving reference of bind but in actual binding or attaching
+        }
+    }
+
+    const app = new React()
+
+
+</script>
+
+</html>

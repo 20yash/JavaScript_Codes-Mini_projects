@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>chai aur js</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+
+    
+
+    document.querySelector('#start').addEventListener('click',function(){
+        const sayDate = function(str){
+    console.log(str,Date.now());
+    }
+    const IntervalId = setInterval(sayDate,1000,"hello")
+    setInterval(IntervalId)
+    console.log("STARTED");
+
+
+    document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(IntervalId)
+    console.log("STOPPED");
+    })
+    })
+    //using start and stop button here as we added a event listener within a event listner
+
+    //setInterval function runs continously
+    //clearInterval function terminates the running setInterval
+
+    //setTimeout function runs only once
+    //clearTimeout function terminates the running setTimeout
+
+</script>
+</html>
