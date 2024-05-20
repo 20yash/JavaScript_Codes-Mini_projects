@@ -11,7 +11,7 @@ const randomColor = function () {
   };
   
   console.log(randomColor());
-  
+  ``
   let intervalId;
   const startChangingColor = function () {
     if (!intervalId) {
@@ -33,3 +33,4 @@ const randomColor = function () {
   
   document.querySelector('#stop').addEventListener('click', stopChangingColor);
   
+  //changes for check
